@@ -59,7 +59,7 @@ function setErrorFor(input, message) {
   
   for (const el of small) {
 
-    if(el.attributes.id.value == input.attributes.id.value){
+    if(el.classList[1] == input.attributes.id.value){
       el.innerText = message;
       el.style = "display: block"
     }
@@ -72,7 +72,7 @@ function setSuccessFor(input) {
 
   for (const el of small) {
 
-    if(el.attributes.id.value == input.attributes.id.value){
+    if(el.classList[1] == input.attributes.id.value){
       el.innerText = "";
       el.style = "display: none"
     }
