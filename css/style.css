@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-mobile.png"); }
+  .container .container__signup {
+    width: 100%;
+    padding: 3rem 0rem; }
+    .container .container__signup .signup__info {
+      text-align: center;
+      color: white; }
+      .container .container__signup .signup__info h1 {
+        max-width: 29rem;
+        margin: 0rem auto 2rem;
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        padding: 0rem 2rem; }
+      .container .container__signup .signup__info .info--text {
+        max-width: 35rem;
+        padding: 0rem 1.5rem;
+        margin: 0 auto; }
+    .container .container__signup .signup__data {
+      margin-top: 2.5rem; }
+      .container .container__signup .signup__data .data--text {
+        width: 90%;
+        max-width: 35rem;
+        padding: 1rem 0rem;
+        background-color: #6055a5;
+        border-radius: .625rem;
+        color: white;
+        margin: 0 auto;
+        box-shadow: 0px 0.625rem 0.125rem rgba(0, 0, 0, 0.2); }
+        .container .container__signup .signup__data .data--text p {
+          margin: 0 auto;
+          text-align: center;
+          padding: 0rem 3rem; }
+      .container .container__signup .signup__data .data__form {
+        width: 90%;
+        max-width: 35rem;
+        margin: 2.5rem auto 0rem;
+        background-color: white;
+        border-radius: .625rem;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 0px 0.625rem 0.125rem rgba(0, 0, 0, 0.2); }
+        .container .container__signup .signup__data .data__form input {
+          padding: 1rem 0rem 1rem 1rem;
+          outline: none;
+          border: 1px solid #b9b6d3;
+          border-radius: .375rem; }
+          .container .container__signup .signup__data .data__form input::placeholder {
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            color: #3e3c49; }
+        .container .container__signup .signup__data .data__form #btn {
+          padding: 1rem 0rem;
+          border-radius: .375rem;
+          background-color: #38cc8c;
+          text-transform: uppercase;
+          letter-spacing: .0625rem;
+          color: white;
+          border: none;
+          border-bottom: 4px solid #2fb67c;
+          font-weight: 600;
+          cursor: pointer; }
+        .container .container__signup .signup__data .data__form small {
+          text-align: center;
+          font-size: .75rem;
+          color: #b9b6d3;
+          margin: 0rem auto;
+          padding: 0rem 1rem; }
+          .container .container__signup .signup__data .data__form small span {
+            color: #ff7a7a;
+            font-weight: 500; }
+        .container .container__signup .signup__data .data__form .message-error {
+          display: none;
+          color: #ff7a7a;
+          font-style: italic;
+          font-weight: 500;
+          font-size: .75rem;
+          margin-right: 0rem;
+          padding-right: 0rem; }
+        .container .container__signup .signup__data .data__form .error {
+          border: 1px solid #ff1a1a;
+          background-image: url("../images/icon-error.svg");
+          background-repeat: no-repeat;
+          background-position: 95% 50%; }
+
+@media only screen and (min-width: 900px) {
+  .container {
+    background-image: url("../images/bg-intro-desktop.png"); }
+    .container .container__signup {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      gap: .625rem; }
+      .container .container__signup .signup__info {
+        text-align: left; }
+        .container .container__signup .signup__info h1 {
+          margin: 0rem 0rem 2rem; }
+      .container .container__signup .signup__data .data--text {
+        width: 100%; }
+        .container .container__signup .signup__data .data--text p {
+          font-size: .875rem; }
+      .container .container__signup .signup__data .data__form {
+        width: 100%;
+        padding: 1.875rem; } }
